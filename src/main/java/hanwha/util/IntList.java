@@ -121,14 +121,6 @@ public class IntList {
 	public int find(PairSet pairSet) {
 		return pairSet.find(find());
 	}
-	
-	/**
-	 * 찾은 부분수열 수를 구한다.
-	 * @return 찾은 부분수열 수 = 인덱스 배열 길이
-	 */
-	public int getIndexSize() {
-		return subCount;
-	}
 
 	/**
 	 * 수열을 32-비트 정수 배열로 복사한다.
@@ -136,6 +128,22 @@ public class IntList {
 	 */
 	public int[] copy() {
 		return Arrays.copyOf(list, size);
+	}
+
+	/**
+	 * 수열의 길이를 구한다.
+	 * @return 수열 길이
+	 */
+	public int size() {
+		return size;
+	}
+	
+	/**
+	 * 찾은 부분수열 수를 구한다.
+	 * @return 찾은 부분수열 수 = 인덱스 배열 길이
+	 */
+	public int indexSize() {
+		return subCount;
 	}
 
 	/**

@@ -58,6 +58,14 @@ public class DoubleSet {
 	}
 
 	/**
+	 * 집합의 원소 수를 구한다.
+	 * @return 원소 수
+	 */
+	public int size() {
+		return size;
+	}
+
+	/**
 	 * double형 데이터의 인덱스를 정렬된 int형 인덱스 배열에서 찾는다.
 	 * @param set   데이터 배열
 	 * @param index 인덱스 배열

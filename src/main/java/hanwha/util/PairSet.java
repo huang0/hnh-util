@@ -84,6 +84,14 @@ public class PairSet {
 	}
 
 	/**
+	 * 집합의 원소 수를 구한다.
+	 * @return 원소 수
+	 */
+	public int size() {
+		return size;
+	}
+
+	/**
 	 * 집합을 16-비트 정수 배열로 복사한다.
 	 * @return 16-비트 정수 배열
 	 * @throws Exception 16-비트 정수 배열로 받을 수 없는 경우.
