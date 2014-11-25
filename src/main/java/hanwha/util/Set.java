@@ -50,6 +50,16 @@ public class Set<E extends Comparable<E>> {
 		set[size] = data;
 		return index[a] = size++;
 	}
+	
+	/**
+	 * 집합의 원소 하나를 구한다.
+	 * @param i 원소 인덱스
+	 * @return i-번째 원소
+	 */
+	@SuppressWarnings("unchecked")
+	public E get(int i) {
+		return (E) set[i];
+	}
 
 	/**
 	 * 집합을 배열로 복사한다.
